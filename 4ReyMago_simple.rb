@@ -155,7 +155,7 @@ else
 	
 	outputDir = ARGV[3]
 	src = "".concat(outputDir) << "/tex/"
-	system('mkdir '.concat src)
+	system('mkdir -p '.concat src)
 
 	for i in 0..(grupo.size-1)
 		creacionFicheros(grupo[i],src + resumen[i],restricciones[i],outputDir)
