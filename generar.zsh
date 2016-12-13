@@ -53,11 +53,11 @@ cd ../..
 mkdir $outputdir
 
 cp $4/tex/*.pdf $outputdir
-cp aux/toprint.pdf $outputdir
+cp $4/toprint.pdf $outputdir
 
 mkdir $outputdir/pdfsIndividuales
 
-cp aux/*.pdf $outputdir/pdfsIndividuales
+cp $4/*.pdf $outputdir/pdfsIndividuales
 rm $outputdir/pdfsIndividuales/todos.pdf $outputdir/pdfsIndividuales/toprint.pdf
 
 

@@ -134,12 +134,12 @@ if ARGV.size < 4
 else
 	grupo = []
 	ARGV[0].split(",").each {|group|
-		grupo << readGroup(group)
+		grupo << readGroup("Grupos/" << group)
 	}
 
 	restricciones = []
 	ARGV[1].split(",").each {|rest|
-		restricciones << readRestrictions(rest)
+		restricciones <<  readRestrictions("Grupos/" << rest)
 	}
 
 	resumen = []
