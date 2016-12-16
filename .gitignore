@@ -70,3 +70,5 @@ tikzgen/*
 *~
 *.sublime-project
 *.zip
+.balboa
+.balboaC
