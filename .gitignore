@@ -2,7 +2,7 @@ tercero*/
 Grupos*/
 tex/
 !tex/*.tex
-aux/
+aux*/
 *.pyg
 _minted*
 *.tmp
