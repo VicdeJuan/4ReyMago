@@ -36,7 +36,7 @@ echo "   Burst..."
 pdftk out.odd-nup.pdf burst output %04d_A.pdf
 pdftk out.even-nup.pdf burst output %04d_B.pdf
 echo "   Generando el pdf para dominarlos a todos..."
-pdftk 0*_*.pdf cat output toprint.pdf
+pdftk 0*_*.pdf cat output toprint$1.pdf
 
 echo "   Clean..."
 mkdir trash
@@ -53,12 +53,12 @@ cd ../..
 mkdir $outputdir
 
 cp $4/tex/*.pdf $outputdir
-cp $4/toprint.pdf $outputdir
+cp $4/toprint$1.pdf $outputdir
 
 mkdir $outputdir/pdfsIndividuales
 
 cp $4/*.pdf $outputdir/pdfsIndividuales
-rm $outputdir/pdfsIndividuales/todos.pdf $outputdir/pdfsIndividuales/toprint.pdf
+rm $outputdir/pdfsIndividuales/todos.pdf $outputdir/pdfsIndividuales/toprint$1.pdf
 
 
 zip -rv $outputdir".zip" $outputdir
